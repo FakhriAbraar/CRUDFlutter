@@ -1,4 +1,4 @@
-import 'package:crud/models/note.dart';
+import 'package:CRUDFlutter/models/note.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:isar/isar.dart';
 import 'package:path_provider/path_provider.dart';
@@ -23,16 +23,15 @@ class NoteDatabase extends ChangeNotifier{
   final List<Note> currentNotes = [];
 
   // create
-  void addNote(String text, String imagePath) async {
-    final note = Note()
-      ..text = text
-      ..imagePath = imagePath;
+  Future<void> addNote(String textFromUser) async {
+    // create a new object
+    final newNote = Note()..text = textFromUser;
 
-    await isar.writeTxn(() async {
-      await isar.notes.put(note);
-    });
+    // save to db
+    await isar.writeTxn(() => isar.notes.put(newNote));
 
-    fetchNotes(); // refresh notes list
+    // re-read from db
+    fetchNotes();
   }
   // read
   Future<void> fetchNotes() async {
