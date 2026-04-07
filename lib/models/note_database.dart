@@ -1,4 +1,4 @@
-import 'package:CRUDFlutter/models/note.dart';
+import 'package:crudtest/models/note.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:isar/isar.dart';
 import 'package:path_provider/path_provider.dart';

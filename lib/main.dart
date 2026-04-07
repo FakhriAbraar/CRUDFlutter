@@ -1,5 +1,5 @@
-import 'package:CRUDFlutter/models/note_database.dart';
-import 'package:crud1/pages/notes_page.dart';
+import 'package:crudtest/models/note_database.dart';
+import 'package:crudtest/pages/notes_page.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 

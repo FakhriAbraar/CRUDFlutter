@@ -1,6 +1,6 @@
 {
-    "name": "kosongan",
-    "short_name": "kosongan",
+    "name": "crudtest",
+    "short_name": "crudtest",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

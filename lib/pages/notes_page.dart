@@ -1,7 +1,7 @@
 // pages/notes_page.dart
 
-import 'package:crud_local_database_app/models/note.dart';
-import 'package:crud_local_database_app/models/note_database.dart';
+import 'package:crudtest/models/note.dart';
+import 'package:crudtest/models/note_database.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
